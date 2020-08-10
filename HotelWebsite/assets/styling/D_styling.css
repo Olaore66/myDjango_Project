@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* ALWAYS FOLLOW THIS APPROACH FOR THE NAVI BAR DESIGN */
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: #333333; 
+    overflow: hidden;  
+    margin: 0;
+    padding: 0;
+}
+
+
+ul.Up-nav li{
+    list-style: none;
+    float: left;
+}
+
+ul.Up-nav li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+}
+
+ul.Up-nav li.mov-rite{
+    float: right;
+}
+
+ul.Up-nav li a:hover{ 
+    background-color: #444444;
+    color: #facea1;
+} 
+
+.current {
+    background: #444444;
+    color: #f7c08a;
+}
+
+/* ######- Increase the Logo Text-##### */
+.Logotxt {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.movEMid{
+    text-align: center;
+}
+/* ###- COPy THE ABOVE STYLING FOR THE NAV-BAR -### */
+
+                       /* #
+                          #
+                          #
+                          #
+                          # */
+
+/* #########- ROWS & COLUMN AND @MEDIA QUERY-########## */
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+[class*= "col-"]{
+    float: left;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* ########- MEDIA QUERY THAT TELLS HOW THE PAGE SHOULD LOOK LIKE ON MOBILE -######## */
+
+@media only screen and (max-width: 960px){
+    body{
+        background-color: lightblue;
+        /* when the screen size is above[px] turn screen to light blue */
+    } 
+   .col-6, .col-4{
+       width: 100%;
+       margin: 0;
+   }
+
+   .col-12{
+       width: 50%;
+       margin: 0;
+   }
+   div.imageME{
+       padding: inherit;
+       padding-top: 70px;
+   }
+
+   div.imageME p{
+       font-size: inherit;
+   }
+/* 
+   .media-image img{
+       background-attachment: fixed;
+   } */
+
+   /* .side-2{
+       opacity: .8 ;
+   }
+   /* .media-image{ */
+    /* visibility: hidden;
+} */ 
+div.container{
+    width: inherit;
+    margin: 0;
+}
+
+div.form{
+    width: inherit;
+    margin: 0;
+}
+
+div.last-part-details{
+    width: 50%;
+    margin: 0;
+}
+}
+
+/* ######- MIDDLE PAGE -##### */
+
+.imageME{
+    background: url("../images/showcase.jpg") no-repeat 
+    center;
+    height: 600px;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px;
+    /* padding-top: 300px; */
+    padding-left: 300px;
+
+}
+
+.imageME h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom:20px;
+}
+
+/* .imageME p{
+font-size: 1em;
+} */
+
+/* font-size: .4em; */
+
+.imageME h1 span{
+    color: rgb(245, 188, 83);
+}
+.btnMiddle {
+
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btnMiddle a{
+    text-decoration: none;
+    color: white;
+    border: solid 1px none;
+    background-color: #333333;
+    padding: 15px 20px;
+}
+
+.btnMiddle a:hover{
+    background: #f7c08a;
+    color: #444444;
+}
+.oya-Shift{
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+.put-all{
+    display: block;
+    align-items: center;
+}
+.put-all p{
+    font-size: 1.05em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* ######-Second Section-###### */
+
+.sec-img img{
+    display: block;
+    width: 100%;
+}
+
+.sec-img{
+    padding: 0;
+    margin: 0;
+}
+
+.side-2{
+    background-color: #333333;
+    color: #ffffff;
+    height: 450px;
+}
+
+.shift-content{
+margin: auto;
+padding-top: 15%;
+}
+
+.side-2 h1{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.side-2 h1 span{
+    color: rgb(245, 188, 83);
+}
+
+.side-2 p{
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+
+.side-2 a{
+    /* text-align: center; */
+    text-decoration: none;
+    color: #333333;
+    background-color: #eeeeee;
+    padding: 15px 20px;
+    
+}
+
+.side-2 a:hover{
+    background-color:  rgb(238, 190, 102);
+}
+
+.btn-More{
+    text-align: center;
+}
+
+/* #########-SECTION WITH 4 COLUMNS-######### */
+
+.section-3{
+    background-color: #eeeeee;
+    padding-top:  70px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.content-3{
+    text-align: center;
+    color: #333322;
+}
+.content-3 h1{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+.content-3 p{
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.Logo-Tri{
+    font-size: 3em;
+    font-stretch: expanded;
+}
+
+.color-middle{
+    background-color: #f7c08a;
+}
+
+
+/* ########-FOOTER-####### */
+.FOOT{
+    background-color: #333333; 
+    width: 100%;
+
+    
+}
+
+.foot-shift{
+    margin: auto;
+    width: 960px;
+    
+}
+
+.foot-shift p{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ##########-ABOUT PAGE-########## */
+.Abt-Color{
+    background-color: #eeeeee;
+    padding-left: 90px;
+    padding-right: 20px;
+}
+
+.abtHBT span{
+    color: #f7c08a;
+}
+
+.abtHBT h1{
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.abtHBT p{
+padding-bottom: 10px;
+line-height: 1.7em;
+}
+
+.abtHBT-image img{
+    display: block;
+    margin: auto;
+    /* overflow: hidden; */
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* ##########-Testimonials-########## */
+.move-item{
+    background: url("../images/test-bg.jpg") no-repeat
+    center;
+    width: 100%;
+    height: 700px;
+    
+}
+
+.container{
+    display: block;
+    width: 960px;
+    margin: auto; 
+    padding-top: 30px;
+}
+
+.container h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.segment-1{
+    display: inline-block;
+    background-color: #f7c08a;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 40px;
+    opacity: .8;
+}
+
+.Move-text{
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 120px;
+    padding-right: 20px;
+    line-height: 1.7em;
+    text-align: justify;
+    
+}
+
+.segment-1 img{
+    float: left;
+    width: 100px;
+    /* padding-right: 10px; */
+    /* padding-top: 10px; */
+    border-radius: 50%;
+}
+
+
+/* #######-CONTACT PAGE-####### */
+.contact-style{
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.form{
+    margin: auto;
+    width: 960px;
+    line-height: 40px;
+}
+
+.form h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.form h1 span{
+    color: #f8c490;
+}
+
+.form-container input, textarea{
+    width: 100%;
+    border: solid 1px #c4bebe;
+    /* color: #f1f1f1 ; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.btnContact{
+    background-color: #333333;
+    color: #ffffff;
+    margin: 0;
+    width: 100px;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnContact:hover{
+    background-color: #f7c08a;
+    color: #333333;
+}
+
+.last-part{
+    background-color: #3f3f3f;
+    color: #eeeeee;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.mid-man{
+    margin: auto;
+    width: 960px;
+}
+
+.last-part-details{
+padding: 20px;
+padding-left: 30px;
+}
+
+.last-part-details h3{
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    line-height: 2em;
+
+}

@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="{% static './styling/D_styling.css' %}">
+</head>
+<body>
+   <nav>
+       <ul class="Up-nav">
+           <li class="Logotxt"><h1>HBT</h1></li>
+           <li class="mov-rite"><a href="contactPage.html" class="current">Contact</a></li>
+           <li class="mov-rite"><a href="AboutPage.html" >About</a></li>
+           <li class="mov-rite"><a href="HomePage.html" >Home</a></li>
+       </ul>
+   </nav>
+
+   <section>
+       <div class="row">
+           <div class="col-12 contact-style">
+               <div class="form">
+                   <h1><span>Contact </span>Us</h1>
+
+                   <p>Please fill out the form below to contact us</p>
+                 
+                   <form action="process.php" class="form-container">
+                        <label for="name">Name</label>
+                        <br>
+                        <input placeholder="type in your name" type="text" id="name">
+
+                        <label for="email">Email</label>
+                        <br>
+                        <input placeholder="enter your mail address here" type="email" id="email">
+
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea placeholder="type your text here" name="message" id="" cols="50" rows="10"></textarea>
+                        <br>
+                        <button class="btnContact">Submit</button>
+                   </form>
+                     
+                </div>
+           </div>
+       </div>
+    </section>
+   <section-2>
+       <div class="row last-part">
+           <div class="mid-man">
+                <div class="col-4 last-part-details">
+                    <h3>Location</h3>
+                    <p> Onah Quarters, Iyara, Ijumu LGA</p>
+                </div>
+                
+                <div class="col-4 last-part-details">
+                    <h3>Phone Number</h3>
+                    <p>(234) 8060214037</p>
+                </div>
+                
+                <div class="col-4 last-part-details">
+                    <h3>Email Address</h3>
+                    <p>frontdest@hotelb.com</p>
+                </div>
+            </div>
+       </div>
+   </section-2>
+
+  <footer >
+        <div class="row FOOT">
+            <div class="col-12 foot-shift">
+                <p>Hotel BT &copy; 2020, All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static '/styling/D_styling.css' %}">
+</head>
+<body>
+   <nav>
+       <ul class="Up-nav">
+           <li class="Logotxt"><h1>HBT</h1></li>
+           <li class="mov-rite"><a href="contactPage.html">Contact</a></li>
+           <li class="mov-rite"><a href="AboutPage.html">About</a></li>
+           <li class="mov-rite"><a href="HomePage.html" class="current">Home</a></li>
+       </ul>
+   </nav>
+
+<section>
+<div class="row imageME">
+    <div class="put-all">
+        <div class="oya-Shift">
+        <div>
+            <h1><span>Enjoy</span> Your Stay</h1>
+            <p>Lorem ipsum, dolor. Earum llat, id eius corrupti laudantium! Consequuntur eos sequi obcaecati ab sapiente.</p>
+        </div>
+        
+        <div class="btnMiddle">
+            <a href="AboutPage.html">About Our Hotel</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 sec-img">
+        <div class="media-image">
+            <img src="{% static './images/photo-1.jpg' %}"  alt="Hotel Image">
+        </div>
+    </div>
+    
+    <div class="col-6 side-2">
+        <div class="shift-content">
+            <div>
+                <div>
+                    <h1><span>The History</span> Of Our Hotel</h1>
+                </div>
+                
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. voluptates, consectetur itaque, consequatur earum perspiciatis? Modi velit minima unde eum amet ipsum, illum asperiores ipsam animi molestias doloribus commodi suscipit obcaecati perferendis facere odit soluta veritatis. Illo quaerat aliquam reiciendis, illum fuga voluptates a laboriosam?</p>
+                </div>
+            </div>
+
+            <div class="btn-More">
+                <a href="#">Read More</a>
+            </div>
+    </div>    
+</div>
+
+<div class="row">
+
+    <div class="col-4 section-3">
+        <div class="content-3">
+            <h1>Great Location</h1>
+            <p>Lorem ipsum, quisquam unde, fugit, aliquam nesciunt cum molestias tempore.</p>
+            <span class="Logo-Tri">&#9776;</span>
+        </div>
+    </div>
+    
+    <div class="col-4 section-3 color-middle">
+        <div class="content-3">
+            <h1>Free Meal</h1>
+            <p>Lorem ipsum, quisquam unde, fugit, aliquam nesciunt cum molestias tempore.</p>
+            <span class="Logo-Tri">&#9776;</span>
+        </div>
+    </div>
+    
+    <div class="col-4 section-3">
+        <div class="content-3">
+            <h1>Fitness Room</h1>
+            <p>Lorem ipsum, quisquam unde, fugit, aliquam nesciunt cum molestias tempore.</p>
+            <span class="Logo-Tri">&#9776;</span>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+<footer >
+    <div class="row FOOT">
+        <div class="col-12 foot-shift">
+            <p>Hotel BT &copy; 2020, All Rights Reserved. </p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

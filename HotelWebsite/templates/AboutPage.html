@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Page</title>
+    <link rel="stylesheet" href="{% static '/styling/D_styling.css' %}">
+</head>
+<body>
+   <nav>
+       <ul class="Up-nav">
+           <li class="Logotxt"><h1>HBT</h1></li>
+           <li class="mov-rite"><a href="contactPage.html">Contact</a></li>
+           <li class="mov-rite"><a href="AboutPage.html" class="current">About</a></li>
+           <li class="mov-rite"><a href="HomePage.html" >Home</a></li>
+       </ul>
+   </nav>
+
+   <section>
+       <div class="row Abt-Color">
+           <div class="col-6 ">
+               <div class="abtHBT">
+                   <h1><span>About</span> Hotel BT</h1>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing er veniam, odit itaque dolorem, eos quae veritatis sapiente velit numquam fugit facilis corrupti quasi ut reiciendis explicabo accusamus dolorum voluptatibus.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing ele reiciendis cumque! Quidem dolore rerum minus expedita!</p>
+                </div>
+           </div>
+           
+           <div class="col-6">
+               <div class="abtHBT-image">
+                   <img src="{% static './images/photo-2.jpg' %}" alt="image2">                   
+                </div>
+           </div>
+       </div>
+   </section>
+
+   <section-2>
+       <div class="row">
+           <div class="col-12 move-item">
+               <div class="container">
+                   <h1>What Our Guest Say</h1>
+                   <div class="segment-1">
+                       <img src="{% static './images/person-1.jpg' %}" alt="sam">
+                       <div class="Move-text">
+                            <p>Lorem  temporibus porro libero, deserunt, nisi cupiditate nobis. Maxime, esse laudantium perferendis obcaecati voluptatibus cupiditate cum delectus corporis id ipsam culpa, dolor, alias pariatur natus blanditiis. Ullam nesciunt similique libero optio. Esse magni consequatur dicta ducimus quisquam.</p>
+                       </div>
+                    </div>
+
+                   <div class="segment-1">
+                       <img src="{% static './images/person-2.jpg' %}" alt="joy">
+                       <div class="Move-text">
+                           <p>Lorem quo. Minima excepturi dolores magnam eveniet, aperiam harum error nostrum eius dignissimos laudantium sit at quod ipsam in quisquam, sed quibusdam nisi praesentium sapiente! Odio accusantium voluptate, qui aliquam iste commodi consectetur corrupti?</p>
+                       </div>   
+                     </div>
+               </div>
+           </div>
+       </div>
+   </section-2>
+
+   <footer >
+    <div class="row FOOT">
+        <div class="col-12 foot-shift">
+            <p>Hotel BT &copy; 2020, All Rights Reserved. </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
